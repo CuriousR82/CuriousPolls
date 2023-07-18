@@ -12,6 +12,13 @@
 		EB3104652A666FF800E296A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3104642A666FF800E296A3 /* Assets.xcassets */; };
 		EB3104682A666FF800E296A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3104672A666FF800E296A3 /* Preview Assets.xcassets */; };
 		EB3104892A6671E400E296A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB3104882A6671E400E296A3 /* GoogleService-Info.plist */; };
+		EB31049B2A66729D00E296A3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EB31049A2A66729D00E296A3 /* FirebaseFirestore */; };
+		EB31049D2A66729D00E296A3 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB31049C2A66729D00E296A3 /* FirebaseFirestoreSwift */; };
+		EB3104A02A66E69E00E296A3 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31049F2A66E69E00E296A3 /* Option.swift */; };
+		EB3104A22A66E6D500E296A3 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A12A66E6D500E296A3 /* Poll.swift */; };
+		EB3104A52A66EB6300E296A3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A42A66EB6300E296A3 /* HomeView.swift */; };
+		EB3104A82A66EBA600E296A3 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A72A66EBA600E296A3 /* HomeVM.swift */; };
+		EB3104AA2A67022D00E296A3 /* PollChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A92A67022D00E296A3 /* PollChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +28,11 @@
 		EB3104642A666FF800E296A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB3104672A666FF800E296A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB3104882A6671E400E296A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB31049F2A66E69E00E296A3 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		EB3104A12A66E6D500E296A3 /* Poll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poll.swift; sourceTree = "<group>"; };
+		EB3104A42A66EB6300E296A3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EB3104A72A66EBA600E296A3 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		EB3104A92A67022D00E296A3 /* PollChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB31049B2A66729D00E296A3 /* FirebaseFirestore in Frameworks */,
+				EB31049D2A66729D00E296A3 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +53,7 @@
 			children = (
 				EB31045F2A666FF400E296A3 /* CuriousPolls */,
 				EB31045E2A666FF400E296A3 /* Products */,
+				EB3104992A66729D00E296A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,10 +68,13 @@
 		EB31045F2A666FF400E296A3 /* CuriousPolls */ = {
 			isa = PBXGroup;
 			children = (
-				EB3104882A6671E400E296A3 /* GoogleService-Info.plist */,
+				EB3104A62A66EB7700E296A3 /* Observables */,
+				EB31049E2A66E68800E296A3 /* Models */,
+				EB3104A32A66EB1A00E296A3 /* Views */,
 				EB3104602A666FF400E296A3 /* CuriousPollsApp.swift */,
 				EB3104622A666FF400E296A3 /* ContentView.swift */,
 				EB3104642A666FF800E296A3 /* Assets.xcassets */,
+				EB3104882A6671E400E296A3 /* GoogleService-Info.plist */,
 				EB3104662A666FF800E296A3 /* Preview Content */,
 			);
 			path = CuriousPolls;
@@ -68,6 +86,39 @@
 				EB3104672A666FF800E296A3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB3104992A66729D00E296A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB31049E2A66E68800E296A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB31049F2A66E69E00E296A3 /* Option.swift */,
+				EB3104A12A66E6D500E296A3 /* Poll.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB3104A32A66EB1A00E296A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB3104A42A66EB6300E296A3 /* HomeView.swift */,
+				EB3104A92A67022D00E296A3 /* PollChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB3104A62A66EB7700E296A3 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				EB3104A72A66EBA600E296A3 /* HomeVM.swift */,
+			);
+			path = Observables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +137,10 @@
 			dependencies = (
 			);
 			name = CuriousPolls;
+			packageProductDependencies = (
+				EB31049A2A66729D00E296A3 /* FirebaseFirestore */,
+				EB31049C2A66729D00E296A3 /* FirebaseFirestoreSwift */,
+			);
 			productName = CuriousPolls;
 			productReference = EB31045D2A666FF400E296A3 /* CuriousPolls.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +169,9 @@
 				Base,
 			);
 			mainGroup = EB3104542A666FF400E296A3;
+			packageReferences = (
+				EB31048A2A66723300E296A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = EB31045E2A666FF400E296A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,7 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB3104A22A66E6D500E296A3 /* Poll.swift in Sources */,
 				EB3104632A666FF400E296A3 /* ContentView.swift in Sources */,
+				EB3104A02A66E69E00E296A3 /* Option.swift in Sources */,
+				EB3104A82A66EBA600E296A3 /* HomeVM.swift in Sources */,
+				EB3104AA2A67022D00E296A3 /* PollChartView.swift in Sources */,
+				EB3104A52A66EB6300E296A3 /* HomeView.swift in Sources */,
 				EB3104612A666FF400E296A3 /* CuriousPollsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +411,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB31048A2A66723300E296A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB31049A2A66729D00E296A3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB31048A2A66723300E296A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		EB31049C2A66729D00E296A3 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB31048A2A66723300E296A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB3104552A666FF400E296A3 /* Project object */;
 }
