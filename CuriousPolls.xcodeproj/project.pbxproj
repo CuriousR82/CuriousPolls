@@ -19,6 +19,8 @@
 		EB3104A52A66EB6300E296A3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A42A66EB6300E296A3 /* HomeView.swift */; };
 		EB3104A82A66EBA600E296A3 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A72A66EBA600E296A3 /* HomeVM.swift */; };
 		EB3104AA2A67022D00E296A3 /* PollChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A92A67022D00E296A3 /* PollChartView.swift */; };
+		EB3104AC2A67750C00E296A3 /* PollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104AB2A67750C00E296A3 /* PollView.swift */; };
+		EB3104AE2A67751700E296A3 /* PollVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104AD2A67751700E296A3 /* PollVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		EB3104A42A66EB6300E296A3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EB3104A72A66EBA600E296A3 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		EB3104A92A67022D00E296A3 /* PollChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollChartView.swift; sourceTree = "<group>"; };
+		EB3104AB2A67750C00E296A3 /* PollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollView.swift; sourceTree = "<group>"; };
+		EB3104AD2A67751700E296A3 /* PollVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 			children = (
 				EB3104A42A66EB6300E296A3 /* HomeView.swift */,
 				EB3104A92A67022D00E296A3 /* PollChartView.swift */,
+				EB3104AB2A67750C00E296A3 /* PollView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				EB3104A72A66EBA600E296A3 /* HomeVM.swift */,
+				EB3104AD2A67751700E296A3 /* PollVM.swift */,
 			);
 			path = Observables;
 			sourceTree = "<group>";
@@ -201,7 +207,9 @@
 			files = (
 				EB3104A22A66E6D500E296A3 /* Poll.swift in Sources */,
 				EB3104632A666FF400E296A3 /* ContentView.swift in Sources */,
+				EB3104AE2A67751700E296A3 /* PollVM.swift in Sources */,
 				EB3104A02A66E69E00E296A3 /* Option.swift in Sources */,
+				EB3104AC2A67750C00E296A3 /* PollView.swift in Sources */,
 				EB3104A82A66EBA600E296A3 /* HomeVM.swift in Sources */,
 				EB3104AA2A67022D00E296A3 /* PollChartView.swift in Sources */,
 				EB3104A52A66EB6300E296A3 /* HomeView.swift in Sources */,

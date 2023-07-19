@@ -6,13 +6,31 @@
 //
 
 import SwiftUI
+import Charts
 
 struct PollChartView: View {
+    let options: [Option]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Chart {
+            ForEach(options) { option in
+                SectorMark(
+                    angle: .value("Count", option.count),
+                    innerRadius: .ratio(0.62),
+                    angularInset: 1.5
+                )
+                    .cornerRadius(5)
+                    .foregroundStyle(by: .value("Name", option.name))
+            }
+        }
     }
 }
 
 #Preview {
-    PollChartView()
+    PollChartView(options: [
+        .init(count: 2, name: "PS5"),
+        .init(count: 1, name: "Switch"),
+        .init(count: 2, name: "DS"),
+        .init(count: 1, name: "PC"),
+    ])
 }
