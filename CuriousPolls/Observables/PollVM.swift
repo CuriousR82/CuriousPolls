@@ -15,6 +15,8 @@ class PollViewModel {
     let db = Firestore.firestore()
     let pollId: String
     
+    var isLoading = false
+    
     var poll: Poll? = nil
     
     init(pollId: String, poll: Poll? = nil) {
@@ -49,5 +51,22 @@ class PollViewModel {
             ]) { error in
                 print(error?.localizedDescription ?? "")
             }
+    }
+    
+    @MainActor
+    func deletePoll() async {
+        isLoading = true
+        defer { isLoading = false }
+
+        do {
+            try await db.document("polls/\(pollId)").delete()
+            // Optionally, you can perform any additional actions after deletion if needed.
+            // For example, you could navigate back to the home screen after deleting the poll.
+            // You can add this code inside the "defer" block.
+
+        } catch {
+            print("Error deleting poll: \(error.localizedDescription)")
+            // Optionally, you can handle the error here or show an alert to the user.
+        }
     }
 }

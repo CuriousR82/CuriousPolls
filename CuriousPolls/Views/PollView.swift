@@ -10,6 +10,8 @@ import UIKit
 
 struct PollView: View {
     var vm: PollViewModel
+    @Environment(\.presentationMode) var presentationMode
+    @State private var isDeleteAlertPresented = false
     
     var body: some View {
         List {
@@ -68,6 +70,22 @@ struct PollView: View {
                         })
                     }
                 }
+            }
+            
+            Button("Delete Poll") {
+                isDeleteAlertPresented = true
+            }
+            .foregroundColor(.red)
+            .alert(isPresented: $isDeleteAlertPresented) {
+                Alert(
+                    title: Text("Delete Poll"),
+                    message: Text("Are you sure you want to delete this poll?"),
+                    primaryButton: .destructive(Text("Delete")) {
+                        Task { await vm.deletePoll() }
+                        presentationMode.wrappedValue.dismiss()
+                    },
+                    secondaryButton: .cancel(Text("Cancel"))
+                )
             }
         }
         .navigationTitle(vm.poll?.name ?? "")
