@@ -21,7 +21,45 @@
 		EB3104AA2A67022D00E296A3 /* PollChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A92A67022D00E296A3 /* PollChartView.swift */; };
 		EB3104AC2A67750C00E296A3 /* PollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104AB2A67750C00E296A3 /* PollView.swift */; };
 		EB3104AE2A67751700E296A3 /* PollVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104AD2A67751700E296A3 /* PollVM.swift */; };
+		EBC8740A2A68D48A000A1996 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC874092A68D48A000A1996 /* WidgetKit.framework */; };
+		EBC8740C2A68D48A000A1996 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC8740B2A68D48A000A1996 /* SwiftUI.framework */; };
+		EBC8740F2A68D48A000A1996 /* CuriousPollsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC8740E2A68D48A000A1996 /* CuriousPollsWidgetBundle.swift */; };
+		EBC874112A68D48A000A1996 /* CuriousPollsWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC874102A68D48A000A1996 /* CuriousPollsWidgetLiveActivity.swift */; };
+		EBC874152A68D48A000A1996 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC874142A68D48A000A1996 /* AppIntent.swift */; };
+		EBC874172A68D48D000A1996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC874162A68D48D000A1996 /* Assets.xcassets */; };
+		EBC8741B2A68D48D000A1996 /* CuriousPollsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EBC874082A68D48A000A1996 /* CuriousPollsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EBC874212A68D522000A1996 /* CuriousPollsWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC874202A68D522000A1996 /* CuriousPollsWidgetAttributes.swift */; };
+		EBC874222A68D522000A1996 /* CuriousPollsWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC874202A68D522000A1996 /* CuriousPollsWidgetAttributes.swift */; };
+		EBC874232A68D581000A1996 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A12A66E6D500E296A3 /* Poll.swift */; };
+		EBC874242A68D581000A1996 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31049F2A66E69E00E296A3 /* Option.swift */; };
+		EBC874262A68D5B0000A1996 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EBC874252A68D5B0000A1996 /* FirebaseFirestore */; };
+		EBC874282A68D5B0000A1996 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EBC874272A68D5B0000A1996 /* FirebaseFirestoreSwift */; };
+		EBC8742A2A68DD52000A1996 /* PollChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A92A67022D00E296A3 /* PollChartView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBC874192A68D48D000A1996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3104552A666FF400E296A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBC874072A68D48A000A1996;
+			remoteInfo = CuriousPollsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBC8741C2A68D48D000A1996 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EBC8741B2A68D48D000A1996 /* CuriousPollsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EB31045D2A666FF400E296A3 /* CuriousPolls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuriousPolls.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +75,16 @@
 		EB3104A92A67022D00E296A3 /* PollChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollChartView.swift; sourceTree = "<group>"; };
 		EB3104AB2A67750C00E296A3 /* PollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollView.swift; sourceTree = "<group>"; };
 		EB3104AD2A67751700E296A3 /* PollVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollVM.swift; sourceTree = "<group>"; };
+		EBC874082A68D48A000A1996 /* CuriousPollsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CuriousPollsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC874092A68D48A000A1996 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		EBC8740B2A68D48A000A1996 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		EBC8740E2A68D48A000A1996 /* CuriousPollsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriousPollsWidgetBundle.swift; sourceTree = "<group>"; };
+		EBC874102A68D48A000A1996 /* CuriousPollsWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriousPollsWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		EBC874142A68D48A000A1996 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		EBC874162A68D48D000A1996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBC874182A68D48D000A1996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC874202A68D522000A1996 /* CuriousPollsWidgetAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriousPollsWidgetAttributes.swift; sourceTree = "<group>"; };
+		EBC874292A68DB1F000A1996 /* CuriousPolls.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CuriousPolls.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +97,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBC874052A68D48A000A1996 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC8740C2A68D48A000A1996 /* SwiftUI.framework in Frameworks */,
+				EBC8740A2A68D48A000A1996 /* WidgetKit.framework in Frameworks */,
+				EBC874262A68D5B0000A1996 /* FirebaseFirestore in Frameworks */,
+				EBC874282A68D5B0000A1996 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				EB31045F2A666FF400E296A3 /* CuriousPolls */,
+				EBC8740D2A68D48A000A1996 /* CuriousPollsWidget */,
 				EB31045E2A666FF400E296A3 /* Products */,
 				EB3104992A66729D00E296A3 /* Frameworks */,
 			);
@@ -65,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				EB31045D2A666FF400E296A3 /* CuriousPolls.app */,
+				EBC874082A68D48A000A1996 /* CuriousPollsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +133,7 @@
 		EB31045F2A666FF400E296A3 /* CuriousPolls */ = {
 			isa = PBXGroup;
 			children = (
+				EBC874292A68DB1F000A1996 /* CuriousPolls.entitlements */,
 				EB3104A62A66EB7700E296A3 /* Observables */,
 				EB31049E2A66E68800E296A3 /* Models */,
 				EB3104A32A66EB1A00E296A3 /* Views */,
@@ -95,6 +157,8 @@
 		EB3104992A66729D00E296A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBC874092A68D48A000A1996 /* WidgetKit.framework */,
+				EBC8740B2A68D48A000A1996 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +191,19 @@
 			path = Observables;
 			sourceTree = "<group>";
 		};
+		EBC8740D2A68D48A000A1996 /* CuriousPollsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				EBC8740E2A68D48A000A1996 /* CuriousPollsWidgetBundle.swift */,
+				EBC874102A68D48A000A1996 /* CuriousPollsWidgetLiveActivity.swift */,
+				EBC874202A68D522000A1996 /* CuriousPollsWidgetAttributes.swift */,
+				EBC874142A68D48A000A1996 /* AppIntent.swift */,
+				EBC874162A68D48D000A1996 /* Assets.xcassets */,
+				EBC874182A68D48D000A1996 /* Info.plist */,
+			);
+			path = CuriousPollsWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +214,12 @@
 				EB3104592A666FF400E296A3 /* Sources */,
 				EB31045A2A666FF400E296A3 /* Frameworks */,
 				EB31045B2A666FF400E296A3 /* Resources */,
+				EBC8741C2A68D48D000A1996 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EBC8741A2A68D48D000A1996 /* PBXTargetDependency */,
 			);
 			name = CuriousPolls;
 			packageProductDependencies = (
@@ -150,6 +229,27 @@
 			productName = CuriousPolls;
 			productReference = EB31045D2A666FF400E296A3 /* CuriousPolls.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EBC874072A68D48A000A1996 /* CuriousPollsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBC8741F2A68D48D000A1996 /* Build configuration list for PBXNativeTarget "CuriousPollsWidgetExtension" */;
+			buildPhases = (
+				EBC874042A68D48A000A1996 /* Sources */,
+				EBC874052A68D48A000A1996 /* Frameworks */,
+				EBC874062A68D48A000A1996 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CuriousPollsWidgetExtension;
+			packageProductDependencies = (
+				EBC874252A68D5B0000A1996 /* FirebaseFirestore */,
+				EBC874272A68D5B0000A1996 /* FirebaseFirestoreSwift */,
+			);
+			productName = CuriousPollsWidgetExtension;
+			productReference = EBC874082A68D48A000A1996 /* CuriousPollsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -162,6 +262,9 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					EB31045C2A666FF400E296A3 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					EBC874072A68D48A000A1996 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -183,6 +286,7 @@
 			projectRoot = "";
 			targets = (
 				EB31045C2A666FF400E296A3 /* CuriousPolls */,
+				EBC874072A68D48A000A1996 /* CuriousPollsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +302,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBC874062A68D48A000A1996 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC874172A68D48D000A1996 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -209,6 +321,7 @@
 				EB3104632A666FF400E296A3 /* ContentView.swift in Sources */,
 				EB3104AE2A67751700E296A3 /* PollVM.swift in Sources */,
 				EB3104A02A66E69E00E296A3 /* Option.swift in Sources */,
+				EBC874212A68D522000A1996 /* CuriousPollsWidgetAttributes.swift in Sources */,
 				EB3104AC2A67750C00E296A3 /* PollView.swift in Sources */,
 				EB3104A82A66EBA600E296A3 /* HomeVM.swift in Sources */,
 				EB3104AA2A67022D00E296A3 /* PollChartView.swift in Sources */,
@@ -217,7 +330,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBC874042A68D48A000A1996 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC874232A68D581000A1996 /* Poll.swift in Sources */,
+				EBC874222A68D522000A1996 /* CuriousPollsWidgetAttributes.swift in Sources */,
+				EBC874112A68D48A000A1996 /* CuriousPollsWidgetLiveActivity.swift in Sources */,
+				EBC874152A68D48A000A1996 /* AppIntent.swift in Sources */,
+				EBC8742A2A68DD52000A1996 /* PollChartView.swift in Sources */,
+				EBC874242A68D581000A1996 /* Option.swift in Sources */,
+				EBC8740F2A68D48A000A1996 /* CuriousPollsWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBC8741A2A68D48D000A1996 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBC874072A68D48A000A1996 /* CuriousPollsWidgetExtension */;
+			targetProxy = EBC874192A68D48D000A1996 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EB3104692A666FF800E296A3 /* Debug */ = {
@@ -342,14 +477,17 @@
 		EB31046C2A666FF800E296A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = CuriousPolls/CuriousPolls.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CuriousPolls/Preview Content\"";
-				DEVELOPMENT_TEAM = MR82WX79L7;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -362,6 +500,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CuriousR.CuriousPolls;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -371,14 +510,17 @@
 		EB31046D2A666FF800E296A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = CuriousPolls/CuriousPolls.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CuriousPolls/Preview Content\"";
-				DEVELOPMENT_TEAM = MR82WX79L7;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -391,6 +533,61 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CuriousR.CuriousPolls;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EBC8741D2A68D48D000A1996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MR82WX79L7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CuriousPollsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CuriousPollsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CuriousR.CuriousPolls.CuriousPollsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBC8741E2A68D48D000A1996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MR82WX79L7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CuriousPollsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CuriousPollsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CuriousR.CuriousPolls.CuriousPollsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -418,6 +615,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		EBC8741F2A68D48D000A1996 /* Build configuration list for PBXNativeTarget "CuriousPollsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC8741D2A68D48D000A1996 /* Debug */,
+				EBC8741E2A68D48D000A1996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -438,6 +644,16 @@
 			productName = FirebaseFirestore;
 		};
 		EB31049C2A66729D00E296A3 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB31048A2A66723300E296A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		EBC874252A68D5B0000A1996 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB31048A2A66723300E296A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		EBC874272A68D5B0000A1996 /* FirebaseFirestoreSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EB31048A2A66723300E296A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
