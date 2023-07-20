@@ -2,11 +2,11 @@
 //  CuriousPollsWidgetAttributes.swift
 //  CuriousPolls
 //
-//  Created by Rosa Jeon on 2023-07-19.
+//  Created by Rosa Jeon on 2023-07-20.
 //
 
-import Foundation
 import ActivityKit
+import Foundation
 
 struct CuriousPollsWidgetAttributes: ActivityAttributes {
     

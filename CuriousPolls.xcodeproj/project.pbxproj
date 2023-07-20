@@ -21,28 +21,28 @@
 		EB3104AA2A67022D00E296A3 /* PollChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A92A67022D00E296A3 /* PollChartView.swift */; };
 		EB3104AC2A67750C00E296A3 /* PollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104AB2A67750C00E296A3 /* PollView.swift */; };
 		EB3104AE2A67751700E296A3 /* PollVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104AD2A67751700E296A3 /* PollVM.swift */; };
-		EBC8740A2A68D48A000A1996 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC874092A68D48A000A1996 /* WidgetKit.framework */; };
-		EBC8740C2A68D48A000A1996 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC8740B2A68D48A000A1996 /* SwiftUI.framework */; };
-		EBC8740F2A68D48A000A1996 /* CuriousPollsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC8740E2A68D48A000A1996 /* CuriousPollsWidgetBundle.swift */; };
-		EBC874112A68D48A000A1996 /* CuriousPollsWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC874102A68D48A000A1996 /* CuriousPollsWidgetLiveActivity.swift */; };
-		EBC874152A68D48A000A1996 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC874142A68D48A000A1996 /* AppIntent.swift */; };
-		EBC874172A68D48D000A1996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC874162A68D48D000A1996 /* Assets.xcassets */; };
-		EBC8741B2A68D48D000A1996 /* CuriousPollsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EBC874082A68D48A000A1996 /* CuriousPollsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		EBC874212A68D522000A1996 /* CuriousPollsWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC874202A68D522000A1996 /* CuriousPollsWidgetAttributes.swift */; };
-		EBC874222A68D522000A1996 /* CuriousPollsWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC874202A68D522000A1996 /* CuriousPollsWidgetAttributes.swift */; };
-		EBC874232A68D581000A1996 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A12A66E6D500E296A3 /* Poll.swift */; };
-		EBC874242A68D581000A1996 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31049F2A66E69E00E296A3 /* Option.swift */; };
-		EBC874262A68D5B0000A1996 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EBC874252A68D5B0000A1996 /* FirebaseFirestore */; };
-		EBC874282A68D5B0000A1996 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EBC874272A68D5B0000A1996 /* FirebaseFirestoreSwift */; };
-		EBC8742A2A68DD52000A1996 /* PollChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A92A67022D00E296A3 /* PollChartView.swift */; };
+		EBF128BB2A69151B00F635EE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC874092A68D48A000A1996 /* WidgetKit.framework */; };
+		EBF128BC2A69151B00F635EE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC8740B2A68D48A000A1996 /* SwiftUI.framework */; };
+		EBF128BF2A69151B00F635EE /* CuriousPollsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF128BE2A69151B00F635EE /* CuriousPollsWidgetBundle.swift */; };
+		EBF128C12A69151B00F635EE /* CuriousPollsWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF128C02A69151B00F635EE /* CuriousPollsWidgetLiveActivity.swift */; };
+		EBF128C32A69151B00F635EE /* CuriousPollsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF128C22A69151B00F635EE /* CuriousPollsWidget.swift */; };
+		EBF128C52A69151E00F635EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF128C42A69151E00F635EE /* Assets.xcassets */; };
+		EBF128C92A69151E00F635EE /* CuriousPollsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EBF128BA2A69151B00F635EE /* CuriousPollsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EBF128D12A69159C00F635EE /* CuriousPollsWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF128D02A69159C00F635EE /* CuriousPollsWidgetAttributes.swift */; };
+		EBF128D22A69159C00F635EE /* CuriousPollsWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF128D02A69159C00F635EE /* CuriousPollsWidgetAttributes.swift */; };
+		EBF128D32A6916FA00F635EE /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31049F2A66E69E00E296A3 /* Option.swift */; };
+		EBF128D42A6916FA00F635EE /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A12A66E6D500E296A3 /* Poll.swift */; };
+		EBF128D52A6916FE00F635EE /* PollChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3104A92A67022D00E296A3 /* PollChartView.swift */; };
+		EBF128D72A69176B00F635EE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EBF128D62A69176B00F635EE /* FirebaseFirestore */; };
+		EBF128D92A69176B00F635EE /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EBF128D82A69176B00F635EE /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EBC874192A68D48D000A1996 /* PBXContainerItemProxy */ = {
+		EBF128C72A69151E00F635EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EB3104552A666FF400E296A3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EBC874072A68D48A000A1996;
+			remoteGlobalIDString = EBF128B92A69151B00F635EE;
 			remoteInfo = CuriousPollsWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				EBC8741B2A68D48D000A1996 /* CuriousPollsWidgetExtension.appex in Embed Foundation Extensions */,
+				EBF128C92A69151E00F635EE /* CuriousPollsWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,16 +75,16 @@
 		EB3104A92A67022D00E296A3 /* PollChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollChartView.swift; sourceTree = "<group>"; };
 		EB3104AB2A67750C00E296A3 /* PollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollView.swift; sourceTree = "<group>"; };
 		EB3104AD2A67751700E296A3 /* PollVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollVM.swift; sourceTree = "<group>"; };
-		EBC874082A68D48A000A1996 /* CuriousPollsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CuriousPollsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC874092A68D48A000A1996 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		EBC8740B2A68D48A000A1996 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		EBC8740E2A68D48A000A1996 /* CuriousPollsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriousPollsWidgetBundle.swift; sourceTree = "<group>"; };
-		EBC874102A68D48A000A1996 /* CuriousPollsWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriousPollsWidgetLiveActivity.swift; sourceTree = "<group>"; };
-		EBC874142A68D48A000A1996 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
-		EBC874162A68D48D000A1996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EBC874182A68D48D000A1996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBC874202A68D522000A1996 /* CuriousPollsWidgetAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriousPollsWidgetAttributes.swift; sourceTree = "<group>"; };
 		EBC874292A68DB1F000A1996 /* CuriousPolls.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CuriousPolls.entitlements; sourceTree = "<group>"; };
+		EBF128BA2A69151B00F635EE /* CuriousPollsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CuriousPollsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF128BE2A69151B00F635EE /* CuriousPollsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriousPollsWidgetBundle.swift; sourceTree = "<group>"; };
+		EBF128C02A69151B00F635EE /* CuriousPollsWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriousPollsWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		EBF128C22A69151B00F635EE /* CuriousPollsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriousPollsWidget.swift; sourceTree = "<group>"; };
+		EBF128C42A69151E00F635EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBF128C62A69151E00F635EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBF128D02A69159C00F635EE /* CuriousPollsWidgetAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriousPollsWidgetAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,14 +97,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBC874052A68D48A000A1996 /* Frameworks */ = {
+		EBF128B72A69151B00F635EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBC8740C2A68D48A000A1996 /* SwiftUI.framework in Frameworks */,
-				EBC8740A2A68D48A000A1996 /* WidgetKit.framework in Frameworks */,
-				EBC874262A68D5B0000A1996 /* FirebaseFirestore in Frameworks */,
-				EBC874282A68D5B0000A1996 /* FirebaseFirestoreSwift in Frameworks */,
+				EBF128BC2A69151B00F635EE /* SwiftUI.framework in Frameworks */,
+				EBF128BB2A69151B00F635EE /* WidgetKit.framework in Frameworks */,
+				EBF128D72A69176B00F635EE /* FirebaseFirestore in Frameworks */,
+				EBF128D92A69176B00F635EE /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				EB31045F2A666FF400E296A3 /* CuriousPolls */,
-				EBC8740D2A68D48A000A1996 /* CuriousPollsWidget */,
+				EBF128BD2A69151B00F635EE /* CuriousPollsWidget */,
 				EB31045E2A666FF400E296A3 /* Products */,
 				EB3104992A66729D00E296A3 /* Frameworks */,
 			);
@@ -125,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				EB31045D2A666FF400E296A3 /* CuriousPolls.app */,
-				EBC874082A68D48A000A1996 /* CuriousPollsWidgetExtension.appex */,
+				EBF128BA2A69151B00F635EE /* CuriousPollsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,15 +191,15 @@
 			path = Observables;
 			sourceTree = "<group>";
 		};
-		EBC8740D2A68D48A000A1996 /* CuriousPollsWidget */ = {
+		EBF128BD2A69151B00F635EE /* CuriousPollsWidget */ = {
 			isa = PBXGroup;
 			children = (
-				EBC8740E2A68D48A000A1996 /* CuriousPollsWidgetBundle.swift */,
-				EBC874102A68D48A000A1996 /* CuriousPollsWidgetLiveActivity.swift */,
-				EBC874202A68D522000A1996 /* CuriousPollsWidgetAttributes.swift */,
-				EBC874142A68D48A000A1996 /* AppIntent.swift */,
-				EBC874162A68D48D000A1996 /* Assets.xcassets */,
-				EBC874182A68D48D000A1996 /* Info.plist */,
+				EBF128BE2A69151B00F635EE /* CuriousPollsWidgetBundle.swift */,
+				EBF128D02A69159C00F635EE /* CuriousPollsWidgetAttributes.swift */,
+				EBF128C02A69151B00F635EE /* CuriousPollsWidgetLiveActivity.swift */,
+				EBF128C22A69151B00F635EE /* CuriousPollsWidget.swift */,
+				EBF128C42A69151E00F635EE /* Assets.xcassets */,
+				EBF128C62A69151E00F635EE /* Info.plist */,
 			);
 			path = CuriousPollsWidget;
 			sourceTree = "<group>";
@@ -219,7 +219,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				EBC8741A2A68D48D000A1996 /* PBXTargetDependency */,
+				EBF128C82A69151E00F635EE /* PBXTargetDependency */,
 			);
 			name = CuriousPolls;
 			packageProductDependencies = (
@@ -230,13 +230,13 @@
 			productReference = EB31045D2A666FF400E296A3 /* CuriousPolls.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EBC874072A68D48A000A1996 /* CuriousPollsWidgetExtension */ = {
+		EBF128B92A69151B00F635EE /* CuriousPollsWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBC8741F2A68D48D000A1996 /* Build configuration list for PBXNativeTarget "CuriousPollsWidgetExtension" */;
+			buildConfigurationList = EBF128CA2A69151E00F635EE /* Build configuration list for PBXNativeTarget "CuriousPollsWidgetExtension" */;
 			buildPhases = (
-				EBC874042A68D48A000A1996 /* Sources */,
-				EBC874052A68D48A000A1996 /* Frameworks */,
-				EBC874062A68D48A000A1996 /* Resources */,
+				EBF128B62A69151B00F635EE /* Sources */,
+				EBF128B72A69151B00F635EE /* Frameworks */,
+				EBF128B82A69151B00F635EE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -244,11 +244,11 @@
 			);
 			name = CuriousPollsWidgetExtension;
 			packageProductDependencies = (
-				EBC874252A68D5B0000A1996 /* FirebaseFirestore */,
-				EBC874272A68D5B0000A1996 /* FirebaseFirestoreSwift */,
+				EBF128D62A69176B00F635EE /* FirebaseFirestore */,
+				EBF128D82A69176B00F635EE /* FirebaseFirestoreSwift */,
 			);
 			productName = CuriousPollsWidgetExtension;
-			productReference = EBC874082A68D48A000A1996 /* CuriousPollsWidgetExtension.appex */;
+			productReference = EBF128BA2A69151B00F635EE /* CuriousPollsWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +264,7 @@
 					EB31045C2A666FF400E296A3 = {
 						CreatedOnToolsVersion = 15.0;
 					};
-					EBC874072A68D48A000A1996 = {
+					EBF128B92A69151B00F635EE = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -286,7 +286,7 @@
 			projectRoot = "";
 			targets = (
 				EB31045C2A666FF400E296A3 /* CuriousPolls */,
-				EBC874072A68D48A000A1996 /* CuriousPollsWidgetExtension */,
+				EBF128B92A69151B00F635EE /* CuriousPollsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -302,11 +302,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBC874062A68D48A000A1996 /* Resources */ = {
+		EBF128B82A69151B00F635EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBC874172A68D48D000A1996 /* Assets.xcassets in Resources */,
+				EBF128C52A69151E00F635EE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +321,7 @@
 				EB3104632A666FF400E296A3 /* ContentView.swift in Sources */,
 				EB3104AE2A67751700E296A3 /* PollVM.swift in Sources */,
 				EB3104A02A66E69E00E296A3 /* Option.swift in Sources */,
-				EBC874212A68D522000A1996 /* CuriousPollsWidgetAttributes.swift in Sources */,
+				EBF128D12A69159C00F635EE /* CuriousPollsWidgetAttributes.swift in Sources */,
 				EB3104AC2A67750C00E296A3 /* PollView.swift in Sources */,
 				EB3104A82A66EBA600E296A3 /* HomeVM.swift in Sources */,
 				EB3104AA2A67022D00E296A3 /* PollChartView.swift in Sources */,
@@ -330,27 +330,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBC874042A68D48A000A1996 /* Sources */ = {
+		EBF128B62A69151B00F635EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBC874232A68D581000A1996 /* Poll.swift in Sources */,
-				EBC874222A68D522000A1996 /* CuriousPollsWidgetAttributes.swift in Sources */,
-				EBC874112A68D48A000A1996 /* CuriousPollsWidgetLiveActivity.swift in Sources */,
-				EBC874152A68D48A000A1996 /* AppIntent.swift in Sources */,
-				EBC8742A2A68DD52000A1996 /* PollChartView.swift in Sources */,
-				EBC874242A68D581000A1996 /* Option.swift in Sources */,
-				EBC8740F2A68D48A000A1996 /* CuriousPollsWidgetBundle.swift in Sources */,
+				EBF128D22A69159C00F635EE /* CuriousPollsWidgetAttributes.swift in Sources */,
+				EBF128C12A69151B00F635EE /* CuriousPollsWidgetLiveActivity.swift in Sources */,
+				EBF128D32A6916FA00F635EE /* Option.swift in Sources */,
+				EBF128C32A69151B00F635EE /* CuriousPollsWidget.swift in Sources */,
+				EBF128D52A6916FE00F635EE /* PollChartView.swift in Sources */,
+				EBF128D42A6916FA00F635EE /* Poll.swift in Sources */,
+				EBF128BF2A69151B00F635EE /* CuriousPollsWidgetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EBC8741A2A68D48D000A1996 /* PBXTargetDependency */ = {
+		EBF128C82A69151E00F635EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EBC874072A68D48A000A1996 /* CuriousPollsWidgetExtension */;
-			targetProxy = EBC874192A68D48D000A1996 /* PBXContainerItemProxy */;
+			target = EBF128B92A69151B00F635EE /* CuriousPollsWidgetExtension */;
+			targetProxy = EBF128C72A69151E00F635EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -540,14 +540,14 @@
 			};
 			name = Release;
 		};
-		EBC8741D2A68D48D000A1996 /* Debug */ = {
+		EBF128CB2A69151E00F635EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MR82WX79L7;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CuriousPollsWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CuriousPollsWidget;
@@ -567,14 +567,14 @@
 			};
 			name = Debug;
 		};
-		EBC8741E2A68D48D000A1996 /* Release */ = {
+		EBF128CC2A69151E00F635EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MR82WX79L7;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CuriousPollsWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CuriousPollsWidget;
@@ -615,11 +615,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBC8741F2A68D48D000A1996 /* Build configuration list for PBXNativeTarget "CuriousPollsWidgetExtension" */ = {
+		EBF128CA2A69151E00F635EE /* Build configuration list for PBXNativeTarget "CuriousPollsWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EBC8741D2A68D48D000A1996 /* Debug */,
-				EBC8741E2A68D48D000A1996 /* Release */,
+				EBF128CB2A69151E00F635EE /* Debug */,
+				EBF128CC2A69151E00F635EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -648,12 +648,12 @@
 			package = EB31048A2A66723300E296A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
 		};
-		EBC874252A68D5B0000A1996 /* FirebaseFirestore */ = {
+		EBF128D62A69176B00F635EE /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EB31048A2A66723300E296A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
 		};
-		EBC874272A68D5B0000A1996 /* FirebaseFirestoreSwift */ = {
+		EBF128D82A69176B00F635EE /* FirebaseFirestoreSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EB31048A2A66723300E296A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;

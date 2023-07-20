@@ -9,6 +9,7 @@ import Foundation
 import FirebaseFirestore
 import SwiftUI
 import Observation
+import ActivityKit
 
 @Observable
 class PollViewModel {
@@ -18,6 +19,7 @@ class PollViewModel {
     var isLoading = false
     
     var poll: Poll? = nil
+    var activity: Activity<CuriousPollsWidgetAttributes>?
     
     init(pollId: String, poll: Poll? = nil) {
         self.pollId = pollId
@@ -34,6 +36,7 @@ class PollViewModel {
                     withAnimation {
                         self.poll = poll
                     }
+                    self.startActivityIfNeeded()
                 } catch {
                     print("Failed to fetch poll")
                 }
@@ -57,16 +60,46 @@ class PollViewModel {
     func deletePoll() async {
         isLoading = true
         defer { isLoading = false }
-
+        
         do {
             try await db.document("polls/\(pollId)").delete()
-            // Optionally, you can perform any additional actions after deletion if needed.
-            // For example, you could navigate back to the home screen after deleting the poll.
-            // You can add this code inside the "defer" block.
-
+            
         } catch {
             print("Error deleting poll: \(error.localizedDescription)")
-            // Optionally, you can handle the error here or show an alert to the user.
+        }
+    }
+    
+    func startActivityIfNeeded() {
+        guard let poll = self.poll, activity == nil, ActivityAuthorizationInfo().frequentPushesEnabled else { return }
+        if let currentPollIdActivity = Activity<CuriousPollsWidgetAttributes>.activities.first(where: { activity in activity.attributes.pollId == pollId }) {
+            self.activity = currentPollIdActivity
+        } else {
+            do {
+                let activityAttributes = CuriousPollsWidgetAttributes(pollId: pollId)
+                let activityContent = ActivityContent(state: poll, staleDate: Calendar.current.date(byAdding: .hour, value: 8, to: Date())!)
+                activity = try Activity.request(attributes: activityAttributes, content: activityContent, pushType: .token)
+                print("Requested a live activity \(String(describing: activity?.id))")
+            } catch {
+                print("Error requesting live activity \(error.localizedDescription)")
+            }
+        }
+        
+        let deviceId = UIDevice.current.identifierForVendor?.uuidString ?? UUID().uuidString
+        Task {
+            guard let activity else { return }
+            for try await token in activity.pushTokenUpdates {
+                let tokenParts = token.map { data in String(format: "%02.2hhx", data) }
+                let token = tokenParts.joined()
+                print("Live activity token updated: \(token)")
+                
+                do {
+                    try await db.collection("polls/\(pollId)/push_tokens")
+                        .document(deviceId)
+                        .setData([ "token": token ])
+                } catch {
+                    print("failed to update token: \(error.localizedDescription)")
+                }
+            }
         }
     }
 }

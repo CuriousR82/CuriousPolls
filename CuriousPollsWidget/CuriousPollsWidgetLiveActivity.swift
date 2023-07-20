@@ -2,7 +2,7 @@
 //  CuriousPollsWidgetLiveActivity.swift
 //  CuriousPollsWidget
 //
-//  Created by Rosa Jeon on 2023-07-19.
+//  Created by Rosa Jeon on 2023-07-20.
 //
 
 import ActivityKit
@@ -37,7 +37,6 @@ struct CuriousPollsWidgetLiveActivity: Widget {
             DynamicIsland {
                 DynamicIslandExpandedRegion(.leading) {
                     Text(context.state.name).lineLimit(1)
-                        .padding(4)
                 }
                 DynamicIslandExpandedRegion(.trailing) {
                     HStack(alignment: .top) {
@@ -45,15 +44,12 @@ struct CuriousPollsWidgetLiveActivity: Widget {
                         Text(String(context.state.totalCount))
                     }
                     .lineLimit(1)
-                    .padding(4)
                 }
                 DynamicIslandExpandedRegion(.bottom) {
                     PollChartView(options: context.state.options)
-                        .padding(4)
                 }
             } compactLeading: {
                 Text(context.state.lastUpdatedOption?.name ?? "-")
-                    .padding(.leading, 6)
             } compactTrailing: {
                 HStack {
                     Image(systemName: "chart.bar.xaxis")
@@ -62,7 +58,7 @@ struct CuriousPollsWidgetLiveActivity: Widget {
             } minimal: {
                 HStack {
                     Image(systemName: "chart.bar.xaxis")
-//                    Text(String(context.state.totalCount))
+                    Text(String(context.state.totalCount))
                 }.lineLimit(1)
             }
         }
@@ -76,6 +72,7 @@ extension CuriousPollsWidgetAttributes {
 }
 
 extension CuriousPollsWidgetAttributes.ContentState {
+    
     fileprivate static var first: CuriousPollsWidgetAttributes.ContentState {
         CuriousPollsWidgetAttributes.ContentState(updatedAt: Date(), name: "Favorite Console", totalCount: 100, options: [Option(count: 20, name: "XBOX S|X"), Option(id: "ps5", count: 80, name: "PS5")], lastUpdatedOptionId: "ps5")
     }
@@ -83,7 +80,9 @@ extension CuriousPollsWidgetAttributes.ContentState {
     fileprivate static var second: CuriousPollsWidgetAttributes.ContentState {
         CuriousPollsWidgetAttributes.ContentState(updatedAt: Date().addingTimeInterval(3600), name: "Favorite Console", totalCount: 160, options: [Option(count: 20, name: "XBOX S|X"), Option(id: "ps5", count: 140, name: "PS5")], lastUpdatedOptionId: "ps5")
     }
+    
 }
+
 
 #Preview("Notification", as: .content, using: CuriousPollsWidgetAttributes.preview) {
     CuriousPollsWidgetLiveActivity()
@@ -91,3 +90,4 @@ extension CuriousPollsWidgetAttributes.ContentState {
     CuriousPollsWidgetAttributes.ContentState.first
     CuriousPollsWidgetAttributes.ContentState.second
 }
+
