@@ -15,10 +15,11 @@ Functionalities in the app:
 - You can join polls other users have created with their poll ID
 - You can add/remove polls
 - And of course, you can vote!
-![adding-removing-polls](/readme_pics/adding-removing-polls.png)
+  
+![img1](/readme_pics/adding-removing-polls.png)
 
 CuriousPolls supports both light and dark modes based on user's system preferences.
-![light-dark-modes](/readme_pics/light-dark-modes.png)
+![img2](/readme_pics/light-dark-modes.png)
 
 We also offer friendly UI for each Dynamic Island sizes!
-![live-activity-types](/readme_pics/live-activity-types.png)
+![img3](/readme_pics/live-activity-types.png)
